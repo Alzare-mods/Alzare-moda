@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ALZARÉ — Catálogo Azul</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Catálogo visual de ALZARÉ — versión azul y negro." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">ALZARÉ</div>
+      <button id="menuToggle" aria-label="Abrir menú">☰</button>
+    </div>
+    <nav id="mainNav" class="main-nav">
+      <a href="#catalog">Catálogo</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Actitud urbana. Azul profundo. ALZARÉ.</h1>
+      <a class="btn" href="#catalog">Ver catálogo</a>
+    </section>
+
+    <section id="catalog" class="catalog">
+      <h2>Catálogo</h2>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section id="colecciones" class="collections">
+      <h2>Colecciones</h2>
+      <div class="cols">
+        <div class="col">
+          <h3>Night Blue</h3>
+          <p>Azul intenso y cortes urbanos.</p>
+        </div>
+        <div class="col">
+          <h3>Street Classic</h3>
+          <p>Negro, corte clásico renovado.</p>
+        </div>
+        <div class="col">
+          <h3>Sport Wave</h3>
+          <p>Comodidad y dinamismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Sobre ALZARÉ</h2>
+      <p>ALZARÉ: expresión urbana nacida el 5 de octubre de 2025. Estilo, fuerza y confianza en cada prenda.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contacto</h2>
+      <p>Instagram: <a href="#" aria-label="Instagram">instagram.com/alzare</a></p>
+      <p>WhatsApp: <a href="https://wa.me/00000000000" id="whatsappLink">Enviar mensaje</a></p>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Cerrar">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <a id="whatsFloat" class="whats-float" href="https://wa.me/00000000000" aria-label="Pedir por WhatsApp">💬</a>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> ALZARÉ — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
